@@ -1,7 +1,7 @@
 #!/bin/bash
 ## Poor Mans CDP analyzer
 ## v 0.2
-## originally conceived and written by Mark Buchanan
+## originally conceived and written by M### B#######
 ## updated by Jeff Pettorino
 ##
 POLLIFACES="eth0"
