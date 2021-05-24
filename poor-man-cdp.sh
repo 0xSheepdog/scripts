@@ -17,7 +17,7 @@ fi
 
 for IFACE in POLLIFACES
 do
-  OUTPUT=`tcpdump -i $IFACE -v -s0 -c 1 '(ether[12:2]=0x88cc or ether[20:2]=0x2000)' > $TMPCDP 2>> /dev/null'
+  OUTPUT=`tcpdump -i $IFACE -v -s0 -c 1 '(ether[12:2]=0x88cc or ether[20:2]=0x2000)' > $TMPCDP 2>> /dev/null`
   DEVICE=`cat $TMPCDP | egrep "Device-ID \(0x01\)" | egrep -Eo "'([^']+)'"`
   PLATFORM=`cat $TMPCDP | egrep "Platform \(0x06\)" | egrep -Eo "'([^']+)'"`
   MGMTADDR=`cat $TMPCDP | egrep "Address \(0x02\)" | egrep -Eo "'([^']+)'"`
