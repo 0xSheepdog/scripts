@@ -1,6 +1,6 @@
 #!/bin/bash
 #!/bin/bash
-## Poor Mans CDP analyzer
+## Auto Start Stop script
 ## v 0.0.1
 ## originally conceived and written by M### B#######
 ## updated by Jeff Pettorino
